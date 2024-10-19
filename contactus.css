@@ -1,0 +1,101 @@
+/* Body Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    background: url('WhatsApp\ Image\ 2024-08-21\ at\ 18.47.16.jpeg') no-repeat center center/cover;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+}
+
+/* Wrapper Styling */
+.contact-wrapper {
+    background: rgba(245, 211, 173, 0.95);
+    padding-top: 50px;
+    padding-left: 30px;
+    padding-right: 60px;
+    padding-bottom: 50px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    width: 100%;
+    border: 2px solid #1b1b1dd5;
+}
+
+/* Form Styling */
+.contact-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #242321;
+    border-bottom: 2px solid #302f2d;
+    padding-bottom: 10px;
+}
+
+.contact-form p {
+    text-align: center;
+    color: #555;
+    margin-bottom: 30px;
+    font-size: 16px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    font-size: 14px;
+    color: #222324;
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.input-group input,
+.input-group textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #333435;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+    transition: all 0.3s ease-in-out;
+}
+
+.input-group input:focus,
+.input-group textarea:focus {
+    border-color: #282829;
+    background-color: #fff;
+    outline: none;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
+}
+
+.input-group textarea {
+    resize: vertical;
+}
+
+.input-group button {
+    width: 100%;
+    padding: 12px;
+    background-color: #2d2e30;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.3);
+}
+
+.input-group button:hover {
+    background-color: #424344;
+    box-shadow: 0 6px 12px rgba(0, 123, 255, 0.4);
+}
+
+.input-group button:focus {
+    outline: none;
+}

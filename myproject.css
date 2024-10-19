@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+    padding: 20px;
+    background: #fecfef;
+}
+header {
+    text-align: center;
+    font-size: 50px;
+    color: black;
+}
+h1, h2, h3 {
+    color: #333;
+}
+p {
+    color: #555;
+}
+.project-section {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    background: linear-gradient(45deg, #ffe676 0%, #fecfef 30%, #97bbf5 60%, #e418e4 100%);
+
+}
+.technologies, .role, .challenges, .outcomes {
+    margin-top: 15px;
+}
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+li {
+    margin-bottom: 10px;
+}
+.projectaccomplishment {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;  
+    background: linear-gradient(45deg, #ffe676 0%, #fecfef 30%, #97bbf5 60%, #e418e4 100%);
+
+}
+.imggs {
+   display: flex;
+}
+.imgs + .imgs{
+    margin-left: 100px;
+}
+footer {
+    margin-top: 40px;
+    font-size: 0.9em;
+    color: #ccc;
+    background-color: #ff98dd;
+    text-align: center;
+}

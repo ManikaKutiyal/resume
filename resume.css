@@ -1,0 +1,358 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f8f8; /* Very light grey background for a clean look */
+    color: #4a4a4a; /* Dark grey text for good readability */
+    line-height: 1.6;
+}
+
+.resume-container {
+    display: flex; /* Use flexbox for two-column layout */
+    max-width: 900px;
+    margin: 20px auto;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Ensure content stays within rounded borders */
+    opacity: 0; /* Start with hidden opacity for fade-in */
+    animation: fadeIn 0.8s forwards; /* Fade-in effect */
+}
+
+.left-column {
+    background: #e3f2fd; /* Light blue for the left column */
+    color: #333;
+    width: 35%; /* Adjust width as needed */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Center the content */
+    position: relative;
+}
+
+.header {
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    animation: typewriter 3s forwards; /* Typewriter effect for header */
+    color: #00796b; /* Teal color for the main title */
+}
+
+.header p {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #616161; /* Medium grey for the subtitle */
+    animation: fadeInUp 1s forwards; /* Fade-in effect for subtitle */
+}
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.contact-info span {
+    font-size: 0.9em;
+    background: rgba(0, 121, 107, 0.1); /* Soft teal background */
+    padding: 5px 10px;
+    border-radius: 5px; /* Rounded corners for contact info */
+    animation: pulse 2s infinite; /* Pulse effect for contact info */
+}
+
+.profile-picture {
+    margin-bottom: 15px; /* Space below the picture */
+}
+
+.profile-picture img {
+    border-radius: 50%;
+    width: 180px;
+    height: 180px;
+    border: 4px solid #e3f2fd; /* Match the left column */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    animation: zoomIn 0.15s; /* Zoom-in effect for profile picture */
+}
+/* CSS Styling for the Top Border */
+.top-border {
+    background-color: #333333; /* Dark background color */
+    height: 50px; /* Height of the top border */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px; /* Padding to create spacing */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    color: #fff; /* White text color for contrast */
+}
+
+.branding .logo {
+    font-weight: bold;
+    font-size: 18px; /* Adjust logo size */
+    color: #f4f4f4; /* Lighter shade for the logo text */
+}
+
+.branding .resume-title {
+    font-size: 14px; /* Slightly smaller font for the title */
+    color: #ccc; /* Light gray color for the resume title */
+}
+
+.footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.footer p {
+    font-size: 0.8em;
+    color: #9e9e9e; /* Light grey for footer text */
+    animation: fadeInUp 1s forwards; /* Fade-in effect for footer */
+}
+
+.right-column {
+    width: 65%; /* Adjust width as needed */
+    padding: 20px;
+    display: flex;
+    flex-direction: column; /* Stacking sections vertically */
+}
+
+.section {
+    padding: 15px;
+    background: #ffffff; /* White for sections */
+    border-radius: 5px;
+    margin-bottom: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    opacity: 0; /* Start with hidden opacity for fade-in */
+    animation: fadeInUp 0.5s forwards; /* Fade-in effect for sections */
+    
+}
+
+.section:hover {
+    transform: scale(1.02); /* Expand effect on hover */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.section h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: #00796b; /* Teal for section headers */
+    animation: fadeInLeft 1s forwards; /* Fade-in from left for section headers */
+}
+
+.skills-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skills-list li {
+    background: #81c784; /* Light green for skill items */
+    color: white;
+    padding: 5px 15px;
+    border-radius: 5px;
+    transition: background 0.3s, transform 0.3s; /* Smooth transition for hover */
+    animation: bounceIn 0.5s forwards; /* Bounce-in effect for skills */
+}
+
+.skills-list li:hover {
+    background: #46a9f0; /* Change to light blue on hover */
+    animation: shake 0.3s; /* Shake effect on hover */
+}
+
+.experience-item {
+    margin-top: 10px;
+}
+
+.experience-item h3 {
+    font-size: 1.5em;
+    margin-bottom: 5px;
+    color: #4a4a4a; /* Matching experience item header */
+    animation: fadeInRight 1s forwards; /* Fade-in from right for experience headers */
+}
+
+.experience-item p {
+    font-size: 0.9em;
+    color: #757575; /* Medium grey for experience item text */
+}
+
+/* Keyframes for animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes typewriter {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+@keyframes bounceIn {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    60% {
+        transform: scale(1.1);
+        opacity: 1;
+    }
+    80% {
+        transform: scale(0.9);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes shake {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-5px);
+    }
+    50% {
+        transform: translateX(5px);
+    }
+    75% {
+        transform: translateX(-5px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+/* Gradient wave background animation */
+.gradient-wave-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(120deg, #e0f7fa, #e2f1f3, #e9caee);
+    background-size: 300% 300%;
+    animation: waveAnimation 15s ease infinite;
+    z-index: -1; /* Ensure the background stays behind the content */
+}
+
+/* Keyframes for the gradient wave effect */
+@keyframes waveAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+/* Glassmorphism effect for section */
+.section {
+    background: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    backdrop-filter: blur(10px); /* Frosted glass effect */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Light border for glass effect */
+    border-radius: 10px;
+}
+/* Soft shadow for sections */
+.section {
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1); /* Larger, softer shadow */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.section:hover {
+    transform: translateY(-5px); /* Lift the section on hover */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+/* Hover effect for buttons */
+button {
+    background-color: #455a64;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.4s, transform 0.4s; /* Smooth color change and lift on hover */
+}
+
+button:hover {
+    background-color: #607d8b; /* Slightly lighter shade */
+    transform: translateY(-3px); /* Lift effect */
+}
+.skill-list {
+    gap: 10px;
+}
+.skill-list:hover {
+    background: #c8f8cb; /* Light green for skill items */
+    color: white;
+    padding: 5px 15px;
+    border-radius: 5px;
+    transition: background 0.3s, transform 0.3s; /* Smooth transition for hover */
+}

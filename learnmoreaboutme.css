@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap');
+.vorder{
+    padding: 5px;
+    margin: 20px auto;
+    font-family: 'Arial', sans-serif; 
+    font-family: "Libre Baskerville", serif;
+    font-size:50px;   
+
+}
+.certi{
+    text-align: center;
+    font-family: "Libre Baskervil le", serif;
+    font-weight: 700;
+    font-size:70px;
+    padding:10px;
+}
+
+.about-me{
+    padding: 20px;
+    margin: 20px auto;
+    font-family: "Libre Baskerville", serif;
+    font-weight: 700;
+    background-image:url(https://wallpapers.com/images/hd/professional-background-2b3p57557lfg0y5g.jpg);
+ background-size: cover; 
+  background-position: center;
+  background-repeat:no-repeat;
+  width:90%; 
+    height: 100%;
+}
+   .cour{
+     font-family:Arial, Helvetica, sans-serif;
+     text: none;
+     font-size:40px;
+   } 
+   h3{
+    font-size:40px;
+    font-weight:normal;
+   }
+
+    
+
+  
+  
+  .about-me header {
+    color: #333;
+    font-size: 6em;
+    margin-bottom: 10px;
+    text-align:center;
+    font-family: "Libre Baskerville", serif;
+    font-weight: 700;
+    
+    
+  
+    
+  }
+  
+  .about-me p {
+    color: #555;
+    line-height: 1.6;
+    font-size: 40px;
+    font-family: "Edu VIC WA NT Beginner", cursive;
+    display:block;
+    border:4px solid grey;
+    border-radius: 25px;
+    padding:10px 10px 20px 20px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+
+  
+  }
+  .description{
+    font-family: "Edu VIC WA NT Beginner", cursive;
+    font-size:30px;
+    font-weight:normal;
+
+  }
+  .special{
+
+font-family: "Edu VIC WA NT Beginner", cursive;
+    font-size:30px;
+
+
+  }
+  
+  .about-me p:first-of-type {
+    margin-top: 0;
+  }
+  
+  .about-me p:last-of-type {
+    margin-bottom: 0;
+  }
+  
+  @media (max-width: 600px) {
+    .about-me {
+      padding: 15px;
+      margin: 10px;
+    }
+  
+    .about-me header {
+      font-size: 8em;
+    }
+  
+    .about-me p {
+      font-size: 1em;
+      font-family: "Edu VIC WA NT Beginner", cursive;
+  
+  
+    }
+  }
+  footer {
+    margin-top: 40px;
+    font-size: 0.9em;
+    color: #ccc;
+    text-align: center;
+}
+
+    
+  
