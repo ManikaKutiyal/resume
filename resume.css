@@ -421,7 +421,7 @@ body {
 body {
     font-family: 'Roboto', sans-serif;
     background: linear-gradient(to bottom right, rgba(66, 212, 132, 0.7), rgba(255, 255, 255, 0.9)), 
-                url('kl.avif') center/cover no-repeat; /* Replace with your image URL */
+                url('images/kl.avif') center/cover no-repeat; /* Replace with your image URL */
     color: #4a4a4a; /* Dark grey text for readability */
     line-height: 1.6;
 }
