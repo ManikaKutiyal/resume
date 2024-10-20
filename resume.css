@@ -464,3 +464,87 @@ body {
     75% { transform: translateX(15px); }
     100% { transform: translateX(0); }
 }
+/* Base styles for larger screens (desktops) */
+
+/* Media query for tablets (screen width of 768px and below) */
+@media (max-width: 768px) {
+    .resume-container {
+        display: block; /* Change layout to block for easier stacking */
+        padding: 0 10px;
+    }
+
+    .left-column, .right-column {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .profile-picture img {
+        width: 150px;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .section h2 {
+        font-size: 20px;
+    }
+
+    .section p, .section ul {
+        font-size: 16px;
+    }
+
+    .contact-info span, .skill-list a img {
+        display: block;
+        margin: 10px 0;
+    }
+}
+
+/* Media query for smartphones (screen width of 480px and below) */
+@media (max-width: 480px) {
+    .resume-container {
+        padding: 0 5px;
+    }
+
+    .profile-picture img {
+        width: 100px;
+        height: auto;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    .section h2 {
+        font-size: 18px;
+    }
+
+    .section p, .section ul {
+        font-size: 14px;
+    }
+
+    .contact-info span {
+        font-size: 12px;
+    }
+
+    .name-container {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .skill-list a img {
+        height: 15px; /* Make the social icons smaller */
+    }
+
+    /* Adjust padding and margins for better spacing */
+    .section {
+        padding: 10px 0;
+    }
+
+    .top-border {
+        padding: 10px;
+    }
+}
+
