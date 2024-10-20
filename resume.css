@@ -1,4 +1,4 @@
-[15:14, 20/10/2024] Kritika Thakur: * {
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -206,221 +206,7 @@ body {
 }
 body {
     font-family: 'Roboto', sans-serif;
-    background: linear-gradient(to bottom right, rgba(66, 212, 132, 0.7), rgba(255, 255, 255, 0.9)), 
-                url('images/kl.avif') center/cover no-repeat; /* Replace with your image URL */
-    color: #4a4a4a; /* Dark grey text for readability */
-    line-height: 1.6;
-}
-kl.avif
-[16:52, 20/10/2024] Kritika Thakur: * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #f8f8f8; /* Very light grey background for a clean look */
-    color: #4a4a4a; /* Dark grey text for good readability */
-    line-height: 1.6;
-}
-
-.resume-container {
-    display: flex; /* Use flexbox for two-column layout */
-    max-width: 900px;
-    margin: 20px auto;
-    background: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    overflow: hidden; /* Ensure content stays within rounded borders */
-    position: relative; /* Position relative for the wave background */
-    z-index: 1; /* Set z-index to position it above the background */
-}
-
-/* Wave Background */
-.resume-container::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(135deg, #81c784 25%, transparent 25%, transparent 50%, #81c784 50%, #81c784 75%, transparent 75%, transparent);
-    background-size: 200% 200%;
-    animation: wave 6s ease-in-out infinite;
-    z-index: -1; /* Place the wave behind the resume container */
-}
-
-@keyframes wave {
-    0% {
-        background-position: 0% 0%;
-    }
-    100% {
-        background-position: 100% 100%;
-    }
-}
-
-.left-column {
-    background: rgba(227, 242, 253, 0.9); /* Light blue for the left column */
-    color: #333;
-    width: 35%; /* Adjust width as needed */
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; /* Center the content */
-    position: relative;
-}
-
-.header {
-    text-align: center;
-}
-
-.header h1 {
-    font-size: 2.5em;
-    margin-bottom: 10px;
-    color: #00796b; /* Teal color for the main title */
-}
-
-.header p {
-    font-size: 1.2em;
-    margin-bottom: 10px;
-    color: #616161; /* Medium grey for the subtitle */
-}
-
-.contact-info {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 15px;
-    margin-top: 10px;
-}
-
-.contact-info span {
-    font-size: 0.9em;
-    background: rgba(0, 121, 107, 0.1); /* Soft teal background */
-    padding: 5px 10px;
-    border-radius: 5px; /* Rounded corners for contact info */
-}
-
-.profile-picture {
-    margin-bottom: 15px; /* Space below the picture */
-}
-
-.profile-picture img {
-    border-radius: 50%;
-    width: 180px;
-    height: 180px;
-    border: 4px solid rgba(227, 242, 253, 0.9); /* Match the left column */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-}
-
-/* CSS Styling for the Top Border */
-.top-border {
-    background-color: #333333; /* Dark background color */
-    height: 50px; /* Height of the top border */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 20px; /* Padding to create spacing */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
-    color: #fff; /* White text color for contrast */
-}
-
-.branding .logo {
-    font-weight: bold;
-    font-size: 18px; /* Adjust logo size */
-    color: #f4f4f4; /* Lighter shade for the logo text */
-}
-
-.branding .resume-title {
-    font-size: 14px; /* Slightly smaller font for the title */
-    color: #ccc; /* Light gray color for the resume title */
-}
-
-.footer {
-    text-align: center;
-    margin-top: 20px;
-    padding: 10px;
-}
-
-.footer p {
-    font-size: 0.8em;
-    color: #9e9e9e; /* Light grey for footer text */
-}
-
-.right-column {
-    width: 65%; /* Adjust width as needed */
-    padding: 20px;
-    display: flex;
-    flex-direction: column; /* Stacking sections vertically */
-}
-
-.section {
-    padding: 15px;
-    background: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
-    backdrop-filter: blur(10px); /* Frosted glass effect */
-    border: 1px solid rgba(255, 255, 255, 0.3); /* Light border for glass effect */
-    border-radius: 10px;
-    margin-bottom: 20px;
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
-    opacity: 0; /* Start with hidden opacity for fade-in */
-    animation: fadeInUp 0.5s forwards; /* Fade-in effect for sections */
-}
-
-.section:hover {
-    transform: translateY(-5px); /* Lift the section on hover */
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
-}
-
-.section h2 {
-    font-size: 1.8em;
-    margin-bottom: 10px;
-    color: #00796b; /* Teal for section headers */
-}
-
-.skills-list {
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-}
-
-.skills-list li {
-    background: #81c784; /* Light green for skill items */
-    color: white;
-    padding: 5px 15px;
-    border-radius: 5px;
-    transition: background 0.3s, transform 0.3s; /* Smooth transition for hover */
-}
-
-.skills-list li:hover {
-    background: #46a9f0; /* Change to light blue on hover */
-}
-
-/* Keyframes for animations */
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
-
-@keyframes wave {
-    0% {
-        background-position: 0% 0%;
-    }
-    100% {
-        background-position: 100% 100%;
-    }
-}
-
-@keyframes fadeInUp {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
-}
-body {
-    font-family: 'Roboto', sans-serif;
-    background: linear-gradient(to bottom right, rgba(66, 212, 132, 0.7), rgba(255, 255, 255, 0.9)), 
+    background: linear-gradient(to bottom right, rgba(71, 240, 147, 0.7), rgba(255, 255, 255, 0.9)), 
                 url('images/kl.avif') center/cover no-repeat; /* Replace with your image URL */
     color: #4a4a4a; /* Dark grey text for readability */
     line-height: 1.6;
@@ -518,5 +304,163 @@ body {
     40% { transform: translateX(5px); }
     60% { transform: translateX(-5px); }
     80% { transform: translateX(5px); }
+    100% { transform: translateX(0); }
+}
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+}
+
+.phone-number, .website {
+    padding: 5px 10px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    margin: 5px 0;
+    transition: background-color 0.3s ease-in-out;
+    animation: pulse 1.5s infinite; /* Add pulsing effect */
+}
+
+.phone-number:hover, .website:hover {
+    background-color: #e0e0e0; /* Change color on hover */
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.05);
+        opacity: 0.8;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+/* Global Settings */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f8f8; /* Very light grey background for a clean look */
+    color: #4a4a4a; /* Dark grey text for good readability */
+    line-height: 1.6;
+}
+
+/* Container Styling */
+.resume-container {
+    display: flex; /* Use flexbox for two-column layout */
+    max-width: 900px;
+    margin: 20px auto;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Ensure content stays within rounded borders */
+    opacity: 0; /* Start with hidden opacity for fade-in */
+    animation: fadeIn 0.8s forwards; /* Fade-in effect */
+}
+
+/* Left Column Styling */
+.left-column {
+    background: #e3f2fd; /* Light blue for the left column */
+    color: #333;
+    width: 35%; /* Adjust width as needed */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Center the content */
+    position: relative;
+}
+
+/* Header Section for Name */
+.header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: #00796b; /* Teal color for the main title */
+    overflow: hidden; /* To create the typewriter effect */
+    white-space: nowrap; /* Prevent line breaks */
+    border-right: 4px solid; /* Create cursor effect */
+    animation: typewriter 3s steps(30, end) forwards, blink 0.75s step-end infinite; /* Typewriter effect */
+}
+
+/* Subheader Section */
+.header p {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #616161; /* Medium grey for the subtitle */
+    animation: fadeInUp 1s forwards; /* Fade-in effect for subtitle */
+}
+
+/* Contact Info Styling with Pulsing Effect */
+.contact-info span {
+    font-size: 0.9em;
+    background: rgba(0, 121, 107, 0.1); /* Soft teal background */
+    padding: 5px 10px;
+    border-radius: 5px; /* Rounded corners for contact info */
+    animation: pulse 2s infinite; /* Pulse effect for contact info */
+}
+
+/* Profile Picture Zoom-In Effect */
+.profile-picture img {
+    border-radius: 50%;
+    width: 180px;
+    height: 180px;
+    border: 4px solid #e3f2fd; /* Match the left column */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    animation: zoomIn 0.6s forwards; /* Zoom-in effect for profile picture */
+}
+
+/* Animation Keyframes */
+@keyframes typewriter {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink {
+    from { border-color: transparent; }
+    to { border-color: black; }
+}
+
+@keyframes zoomIn {
+    from { transform: scale(0); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+@keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+}
+
+/* Fade-In Animation */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Fade-In-Up Animation for Text */
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+/* CSS for animating the name movement */
+.name-container {
+    font-size: 3em;
+    font-weight: bold;
+    animation: moveName 3s ease-in-out infinite;
+}
+
+@keyframes moveName {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(30px); }
+    50% { transform: translateX(-30px); }
+    75% { transform: translateX(15px); }
     100% { transform: translateX(0); }
 }
