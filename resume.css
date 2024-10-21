@@ -547,4 +547,26 @@ body {
         padding: 10px;
     }
 }
+.hero {
+    font-family: Markazi Text, serif; font-optical-sizing: auto; font-weight: bold; font-style: normal;   
+    white-space: nowrap; /* Prevent text from wrapping */
+    overflow: hidden; /* Hide the text overflow */
+    animation: typing 6s steps(30, end) infinite; /* Remove cursor animation */
+    font-size: 25px;
+}
 
+/* Typing animation */
+@keyframes typing {
+    0% {
+        width: 0; /* Start with no width */
+    }
+    25% {
+        width: 100%; /* Show the full text */
+    }
+    75% {
+        width: 100%; /* Maintain full width */
+    }
+    100% {
+        width: 0; /* Hide the text again */
+    }
+}
